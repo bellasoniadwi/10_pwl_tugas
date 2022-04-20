@@ -32,10 +32,11 @@
             <td>{{$score->pivot->nilai}}</td>
         </tr>
         @endforeach
-
     </table>
+
+    <br>
+    <a class="btn btn-danger btn-block" style="float: left;" href="{{ route('mahasiswa.cetak_pdf', $nilai->nim) }}">Cetak PDF</a>
     <div class="float-right my-2">
-        <a class="btn btn-danger mt-3" style="float: left;" href="{{ route('mahasiswa.cetak_pdf', $nilai->nim) }}">Cetak PDF</a>
         <a class="btn btn-success mt-3" style="float: right;" href="{{ route('mahasiswa.index') }}">Kembali</a>
     </div>
 @endsection

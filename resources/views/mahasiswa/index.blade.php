@@ -37,7 +37,7 @@
             <th>Jurusan</th>
             <th>No_Handphone</th>
             <th width="100px">Email</th>
-            <th width="350px">Action</th>
+            <th width="150px">Action</th>
         </tr>
 
         @foreach ($paginate as $mhs)
